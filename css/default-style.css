@@ -23,8 +23,9 @@ textarea {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'gotham';
+    font-family: 'Raleway-Regular';
     font-size: 1rem;
+    color: var(--textColor);
 }
 
 sh1,
@@ -35,7 +36,7 @@ h5,
 h6,
 p {
     margin: 0 0 1em 0;
-    font-family: 'gotham';
+    font-family: 'Raleway-Regular';
     font-size: 1rem;
 }
 
@@ -43,6 +44,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    background-color: var(--pageColor);
 }
 a {
   text-decoration: none;

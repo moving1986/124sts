@@ -8,6 +8,19 @@
     --lineColor: #E1E1E1;
 }
 
+h2 {
+    --arrow-size: 30px; 
+    --spacing: 20px;
+    
+    font-family: 'Raleway-SemiBold';
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    background: url('/images/svg/ico-arrow-h2.svg') no-repeat right var(--spacing) center;
+    padding-right: calc(var(--arrow-size) + var(--spacing) * 2);
+}
+
 .wrapper {
     width: 1920px;
     margin: 0 auto;
@@ -246,6 +259,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 60px 40px 40px 60px;
     width: 970px;
     height: 540px;
@@ -284,29 +298,39 @@
 }
 
 .slider-arrows {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
 
-display: flex;
-
-align-items: center;
-
-gap: 10px;
-
-width: 110px;
-height: 50px;
+    width: 100%;
+    height: 50px;
 }
 
 .slider-arrow-left {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    
+
     background-color: var(--white);
     background-image: url('/images/svg/ico-left-arrow.svg');
     background-repeat: no-repeat;
     background-position: center center;
+
+    cursor: pointer;
 }
 
+.slider-arrow-right {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 
+    background-color: var(--white);
+    background-image: url('/images/svg/ico-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
 
 /* Butttons */
 
@@ -324,14 +348,35 @@ height: 50px;
     font-size: 16px;
     line-height: 19px;
     color: var(--white);
-    
+
     cursor: pointer;
-    
+
     &:hover {
         background: var(--textColor);
     }
 }
 
+.button-grey {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+
+    background: var(--textColor);
+    border-radius: 100px;
+
+    font-family: 'Raleway-Bold';
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+
+    cursor: pointer;
+
+    &:hover {
+        background: var(--accentColor);
+    }
+}
 
 
 /* End Buttons */
@@ -368,5 +413,48 @@ height: 50px;
     background: url('/images/additional-bun-2.jpg') no-repeat;
 }
 
+.bun-header {
+    font-family: 'Raleway-SemiBold';
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--white);
+}
+
 /* End slider */
 
+/* Start advantages */
+
+.advantages {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    height: 164px;
+}
+
+.advanteges-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    width: 345px;
+    height: 44px;
+}
+
+.ico-advanteges {}
+
+.advantages-text {
+    font-family: 'Raleway-Medium';
+    font-size: 16px;
+    line-height: 140%;
+}
+
+/* End advantages */
+
+/* Start cataloog */
+
+.header-h2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

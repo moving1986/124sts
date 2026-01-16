@@ -9,9 +9,9 @@
 }
 
 h2 {
-    --arrow-size: 30px; 
+    --arrow-size: 30px;
     --spacing: 20px;
-    
+
     font-family: 'Raleway-SemiBold';
     font-size: 24px;
     line-height: 120%;
@@ -458,3 +458,74 @@ h2 {
     justify-content: left;
     align-items: center;
 }
+
+.catalog-line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 30px;
+}
+
+.catalog-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 6px;
+
+    width: 270px;
+    height: 320px;
+
+    border-radius: 20px;
+}
+
+.cat-card-header {
+    margin-bottom: 6px;
+
+    font-family: 'Raleway-SemiBold';
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.arrow-cat {
+    text-align: end;
+}
+.cat-esmola {
+    background: url('/images/cat-esmola.jpg') no-repeat;
+}
+
+.cat-polismola {
+    background: url('/images/cat-polismola.jpg') no-repeat;
+}
+
+.cat-armmat {
+    background: url('/images/cat-arm-mat.jpg') no-repeat;
+}
+.cat-silikon {
+    background: url('/images/cat-silikon.jpg') no-repeat;
+}
+.cat-silikon-oil {
+    background: url('/images/cat-siliKon-oil.jpg') no-repeat;
+}
+.cat-plastic {
+    background: url('/images/cat-plastics.jpg') no-repeat;
+}
+.cat-glue {
+    background: url('/images/cat-glue.jpg') no-repeat;
+}
+.cat-germetic {
+    background: url('/images/cat-germetic.jpg') no-repeat;
+}
+.cat-gidro {
+    background: url('/images/cat-gidro.jpg') no-repeat;
+}
+.cat-lkm {
+    background: url('/images/cat-lkm.jpg') no-repeat;
+}
+
+/* End Catalog */
+
+

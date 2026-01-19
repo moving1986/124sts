@@ -27,6 +27,7 @@ textarea {
     font-family: 'Raleway-Regular';
     font-size: 1rem;
     color: var(--textColor);
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 sh1,
@@ -39,6 +40,7 @@ p {
     margin: 0 0 1em 0;
     font-family: 'Raleway-Regular';
     font-size: 1rem;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 html,

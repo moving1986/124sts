@@ -6,6 +6,7 @@
     --blue: #F3F8FF;
     --accentColor: #F33846;
     --lineColor: #E1E1E1;
+    --blueDarck: #72B2DF;
 }
 
 h2 {
@@ -561,6 +562,7 @@ h2 {
     align-items: center;
     padding: 14px 24px;
     gap: 10px;
+    margin-bottom: 30px;
 
     background: var(--blue);
     border-radius: 100px;
@@ -584,6 +586,8 @@ h2 {
 }
 
 .best-offers-card {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -592,22 +596,124 @@ h2 {
     gap: 12px;
 
     width: 345px;
-    height: 540px;
+    height: 565px;
 
     border: 1px solid var(--lineColor);
     border-radius: 20px;
 }
+
 .offers-image {
     width: 313px;
     height: 300px;
 }
 
+.product-labaels {
+    position: absolute;
+    left: 26px;
+    top: 26px;
+
+    display: flex;
+    gap: 6px;
+}
+
+.product-labels__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
+    gap: 10px;
+
+    background: var(--blueDarck);
+    border-radius: 100px;
+
+    font-family: 'Raleway-Bold';
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--white)
+}
+
+.offer-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.offers-text {
+    padding-top: 12px;
+
+    font-family: 'Raleway-Medium';
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.offer-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.offer-price-now {
+    font-family: 'Raleway-Bold';
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.offer-price-old {
+    font-family: 'Raleway-Medium';
+    font-size: 14px;
+    line-height: 140%;
+    text-decoration-line: line-through;
+    color: var(--smallTextColor);
+}
+
+.offer-price-discont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+
+    width: 37px;
+    height: 21px;
+
+    background: var(--textColor);
+    border-radius: 4px;
+
+    font-family: 'Raleway-Bold';
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--white);
+}
+
+.packaging-options {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pack-options {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.pack-options-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+
+    border: 1px solid var(--lineColor);
+    border-radius: 6px;
+
+    font-family: 'Raleway-SemiBold';
+    font-size: 14px;
+    line-height: 140%;
+}
+
+
 
 
 /* End Best offers */
-
-/* Start Products images */
-.prod-isoln {
-    background: url('/images/products/izolan.jpg') no-repeat;
-}
-/* End Products images */

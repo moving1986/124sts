@@ -873,15 +873,16 @@ h2 {
 /* Start Footer */
 
 .footer {
+    height: 986px;
+    background: var(--textColor);
+}
+
+.footer-cont {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 60px 225px 40px;
+    padding: 60px 0 40px;
     gap: 60px;
-
-    height: 986px;
-
-    background: var(--textColor);
 }
 
 .map {
@@ -892,7 +893,107 @@ h2 {
 
     width: 1470px;
     height: 495px;
-    border-radius: 100px;
+    border-radius: 20px;
 }
 
+.footer-links {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-links-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    margin: 0 auto;
+    width: 274px;
+    height: 64px;
+}
+
+.map-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    margin: 0 auto;
+    width: 247px;
+    height: 54px;
+}
+
+
+.logo-text-footer {
+    font-family: 'Raleway-SemiBold';
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    color: var(--white);
+}
+
+.map-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 3px;
+    gap: 8px;
+    border-bottom: 1px dashed var(--accentColor);
+
+}
+
+.tag-text {
+    font-family: 'Raleway-Bold';
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--accentColor);
+}
+
+.footer-nav {}
+
+.footer-nav-link {
+    list-style: none;
+
+}
+
+.nav-link {
+    margin-bottom: 18px;
+    color: var(--white);
+    font-family: 'Raleway-SemiBold';
+
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.footer-link-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+
+    margin: 0 auto;
+}
+
+.item-link {
+    color: var(--white);
+}
 /* End Footer */

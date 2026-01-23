@@ -911,6 +911,8 @@ h2 {
     align-items: start;
     justify-content: space-between;
 
+    height: 188px;
+
 }
 
 .logo-footer {
@@ -1025,6 +1027,48 @@ h2 {
     color: var(--white);
 
     cursor: pointer;
+}
+
+.footer-differents-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.footer-differents-links-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dif-link-text {
+    padding: 0px 0px 2px;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--white);
+
+    border-bottom: 1px dashed var(--white);
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    height: 103px;
+
+    border-radius: 20px;
+    background: var(--accentColor);
+
+    font-family: 'Raleway-SemiBold';
+    font-size: 14px;    
+    line-height: 21px;
+    text-align: center;
+    color: var(--white);
 }
 
 /* End Footer */

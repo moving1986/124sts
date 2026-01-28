@@ -70,9 +70,7 @@ ul {
     max-width:100%;
     object-fit: cover;
 }
-.no_disp {
-    display: none;
-}
+
 .test {
     border: 1px solid #f00;
 

@@ -9,6 +9,7 @@
     --blueDarck: #72B2DF;
 }
 
+
 h2 {
     --arrow-size: 30px;
     --spacing: 20px;
@@ -86,12 +87,12 @@ h2 {
 
 /* Сам селект */
 .city-select {
-    appearance: none; 
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    
+
     width: 100%;
-   
+
     font-size: 16px;
     line-height: 1.5;
     background-color: var(--white);
@@ -102,7 +103,7 @@ h2 {
 /* При наведении */
 .city-select:hover {
     border-color: #888;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -112,7 +113,7 @@ h2 {
     top: 50%;
     right: 12px;
     transform: translateY(-50%);
-    pointer-events: none; 
+    pointer-events: none;
     z-index: 1;
     width: 16px;
     height: 16px;
@@ -126,7 +127,7 @@ h2 {
 }
 
 /* Анимация стрелки при открытии (опционально) */
-.city-select:focus ~ .custom-arrow img {
+.city-select:focus~.custom-arrow img {
     transform: rotate(180deg);
 }
 
@@ -215,11 +216,77 @@ h2 {
 }
 
 .cont-phone {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 0px;
     gap: 26px;
+
+    cursor: pointer;
 }
+
+/* Start modal contact */
+
+.contact-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+
+    position: absolute;
+    width: 295px;
+    left: 10px;
+    top: 30px;
+
+    background: var(--white);
+    border-radius: 20px;
+    border: 1px solid var(--lineColor);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+.contact-header {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--smallTextColor);
+}
+
+
+.contact-phone-number {
+    font-family: 'Raleway-Bold';
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.line-contact {
+    width: 255px;
+    border: 1px solid var(--lineColor);
+}
+
+.contact-adresses {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: 'Raleway-Medium';
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.contact-soc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* End modal contact */
 
 .phone {
     font-family: 'Raleway-Bold';
@@ -262,6 +329,7 @@ h2 {
 }
 
 .cat-products {
+    position: relative;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -272,7 +340,7 @@ h2 {
     width: 194px;
     height: 48px;
 
-    background: #F33846;
+    background: var(--accentColor);
     border-radius: 100px;
 
     font-family: 'Raleway-Bold';
@@ -282,6 +350,61 @@ h2 {
     color: var(--white);
     cursor: pointer;
 }
+
+/* Start modal catalog */
+
+.modal-catalog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    padding: 40px;
+    gap: 40px 30px;
+
+    position: absolute;
+    width: 1550px;
+    height: 560px;
+    left: -290px;
+    top: 60px;
+
+    background: var(--white);
+    box-shadow: 0px 10px 40px rgba(75, 75, 75, 0.1);
+    border-radius: 20px;
+
+}
+
+.modal-catalog-item {
+    width: 270px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+.modal-catalog-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 2px;
+}
+
+.maodal-catalog-header {
+    font-family: 'Raleway-SemiBold';
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.modal-catalog-quantity {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--smallTextColor);
+}
+
+/* End modal catalog */
+
 
 .search-feild {
     justify-content: space-between;
@@ -1140,10 +1263,14 @@ h2 {
     background: var(--accentColor);
 
     font-family: 'Raleway-SemiBold';
-    font-size: 14px;    
+    font-size: 14px;
     line-height: 21px;
     text-align: center;
     color: var(--white);
 }
 
 /* End Footer */
+
+.hidden {
+    display: none;
+}

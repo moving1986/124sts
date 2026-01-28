@@ -6,4 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
 
+    const catProduct = document.querySelector('.cat-products');
+    const modalCatalog = document.querySelector('.modal-catalog');
+
+    catProduct.addEventListener('click', () => {
+        modalCatalog.classList.toggle('hidden');
+    });
 });

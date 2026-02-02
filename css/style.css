@@ -701,6 +701,8 @@ h2 {
     text-align: end;
 }
 
+/* Start Catalog pikchers */
+
 .cat-esmola {
     background: url('/images/cat-esmola.jpg') no-repeat;
 }
@@ -741,9 +743,45 @@ h2 {
     background: url('/images/cat-lkm.jpg') no-repeat;
 }
 
-/* End Catalog */
+.cat-solvents {
+    background: url('/images/cat-solvents.jpg') no-repeat;
+}
 
-/* Sttart Best offers */
+.cat-gips {
+    background: url('/images/cat-gips.jpg') no-repeat;
+}
+
+.cat-forms {
+    background: url('/images/cat-forms.jpg') no-repeat;
+}
+
+.cat-dyes {
+    background: url('/images/cat-dyes.jpg') no-repeat;
+}
+
+.cat-add-beton {
+    background: url('/images/cat-add-beton.jpg') no-repeat;
+}
+
+.cat-topping {
+    background: url('/images/cat-topping.jpg') no-repeat;
+}
+
+.cat-fake-grass {
+    background: url('/images/cat-fake-grass.jpg') no-repeat;
+}
+
+.cat-lubricants {
+    background: url('/images/cat-lubricants.jpg') no-repeat;
+}
+
+.cat-equipment {
+    background: url('/images/cat-equipment.jpg') no-repeat;
+}
+
+/* End Catalog Pikchers */
+
+/* Start Best offers */
 
 .best-offers {
 

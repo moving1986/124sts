@@ -11,16 +11,10 @@
 
 
 h2 {
-    --arrow-size: 30px;
-    --spacing: 20px;
-
     font-family: 'Raleway-SemiBold';
-    font-size: 24px;
-    line-height: 120%;
-    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 38px;
 
-    background: url('/images/svg/ico-arrow-h2.svg') no-repeat right var(--spacing) center;
-    padding-right: calc(var(--arrow-size) + var(--spacing) * 2);
 }
 
 .wrapper {
@@ -46,8 +40,12 @@ h2 {
 }
 
 .header-second_line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 104px;
     border-top: 1px solid var(--lineColor);
+
 }
 
 .h-first-line {
@@ -307,11 +305,16 @@ h2 {
 .h-second-line {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .logo {
-    height: 104px;
+    box-sizing: border-box;
+    width: 274px;
+    height: 64px;
+}
+
+.logo-link {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -324,9 +327,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.logo {
-    width: 255px;
-}
+
 
 .cat-products {
     position: relative;
@@ -417,7 +418,7 @@ h2 {
 
     border: 1px solid #E1E1E1;
     border-radius: 100px;
-    background: url('/images/svg/ico-search.svg') no-repeat right 24px center;
+    background: url('../images/svg/ico-search.svg') no-repeat right 24px center;
 
 }
 
@@ -463,7 +464,7 @@ h2 {
     width: 970px;
     height: 540px;
 
-    background: url('/images/main-slider.jpg') no-repeat;
+    background: url('../images/main-slider.jpg') no-repeat;
     border-radius: 20px;
 }
 
@@ -512,7 +513,7 @@ h2 {
     border-radius: 50%;
 
     background-color: var(--white);
-    background-image: url('/images/svg/ico-left-arrow.svg');
+    background-image: url('../images/svg/ico-left-arrow.svg');
     background-repeat: no-repeat;
     background-position: center center;
 
@@ -525,7 +526,7 @@ h2 {
     border-radius: 50%;
 
     background-color: var(--white);
-    background-image: url('/images/svg/ico-right-arrow.svg');
+    background-image: url('../images/svg/ico-right-arrow.svg');
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
@@ -605,11 +606,11 @@ h2 {
 }
 
 .bun1 {
-    background: url('/images/additional-bun-1.jpg') no-repeat;
+    background: url('../images/additional-bun-1.jpg') no-repeat;
 }
 
 .bun2 {
-    background: url('/images/additional-bun-2.jpg') no-repeat;
+    background: url('../images/additional-bun-2.jpg') no-repeat;
 }
 
 .bun-header {
@@ -662,8 +663,21 @@ h2 {
 
 .header-h2 {
     display: flex;
-    justify-content: left;
+    justify-content: start;
     align-items: center;
+
+    --arrow-size: 30px;
+    --spacing: 20px;
+
+    background: url('../images/svg/ico-arrow-h2.svg') no-repeat right var(--spacing) center;
+    padding-right: calc(var(--arrow-size) + var(--spacing) * 2);
+
+}
+
+.header-h2>a>h2 {
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
 }
 
 .catalog-line {
@@ -704,103 +718,103 @@ h2 {
 /* Start Catalog pikchers */
 
 .cat-esmola {
-    background: url('/images/cat-esmola.jpg') no-repeat;
+    background: url('../images/cat-esmola.jpg') no-repeat;
 }
 
 .cat-polismola {
-    background: url('/images/cat-polismola.jpg') no-repeat;
+    background: url('../images/cat-polismola.jpg') no-repeat;
 }
 
 .cat-armmat {
-    background: url('/images/cat-arm-mat.jpg') no-repeat;
+    background: url('../images/cat-arm-mat.jpg') no-repeat;
 }
 
 .cat-silikon {
-    background: url('/images/cat-silikon.jpg') no-repeat;
+    background: url('../images/cat-silikon.jpg') no-repeat;
 }
 
 .cat-silikon-oil {
-    background: url('/images/cat-siliKon-oil.jpg') no-repeat;
+    background: url('../images/cat-siliKon-oil.jpg') no-repeat;
 }
 
 .cat-plastic {
-    background: url('/images/cat-plastics.jpg') no-repeat;
+    background: url('../images/cat-plastics.jpg') no-repeat;
 }
 
 .cat-glue {
-    background: url('/images/cat-glue.jpg') no-repeat;
+    background: url('../images/cat-glue.jpg') no-repeat;
 }
 
 .cat-germetic {
-    background: url('/images/cat-germetic.jpg') no-repeat;
+    background: url('../images/cat-germetic.jpg') no-repeat;
 }
 
 .cat-gidro {
-    background: url('/images/cat-gidro.jpg') no-repeat;
+    background: url('../images/cat-gidro.jpg') no-repeat;
 }
 
 .cat-lkm {
-    background: url('/images/cat-lkm.jpg') no-repeat;
+    background: url('../images/cat-lkm.jpg') no-repeat;
 }
 
 .cat-solvents {
-    background: url('/images/cat-solvents.jpg') no-repeat;
+    background: url('../images/cat-solvents.jpg') no-repeat;
 }
 
 .cat-gips {
-    background: url('/images/cat-gips.jpg') no-repeat;
+    background: url('../images/cat-gips.jpg') no-repeat;
 }
 
 .cat-forms {
-    background: url('/images/cat-forms.jpg') no-repeat;
+    background: url('../images/cat-forms.jpg') no-repeat;
 }
 
 .cat-dyes {
-    background: url('/images/cat-dyes.jpg') no-repeat;
+    background: url('../images/cat-dyes.jpg') no-repeat;
 }
 
 .cat-add-beton {
-    background: url('/images/cat-add-beton.jpg') no-repeat;
+    background: url('../images/cat-add-beton.jpg') no-repeat;
 }
 
 .cat-topping {
-    background: url('/images/cat-topping.jpg') no-repeat;
+    background: url('../images/cat-topping.jpg') no-repeat;
 }
 
 .cat-fake-grass {
-    background: url('/images/cat-fake-grass.jpg') no-repeat;
+    background: url('../images/cat-fake-grass.jpg') no-repeat;
 }
 
 .cat-lubricants {
-    background: url('/images/cat-lubricants.jpg') no-repeat;
+    background: url('../images/cat-lubricants.jpg') no-repeat;
 }
 
 .cat-equipment {
-    background: url('/images/cat-equipment.jpg') no-repeat;
+    background: url('../images/cat-equipment.jpg') no-repeat;
 }
 
 .cat-boxes-for-opori {
-    background: url('/images/cat-boxes-for-opori.jpg') no-repeat;
+    background: url('../images/cat-boxes-for-opori.jpg') no-repeat;
 }
 
 .cat-marble-chips {
-    background: url('/images/cat-marble-chips.jpg') no-repeat;
+    background: url('../images/cat-marble-chips.jpg') no-repeat;
 }
 
 .cat-quartz-sands {
-    background: url('/images/cat-quartz-sands.jpg') no-repeat;
+    background: url('../images/cat-quartz-sands.jpg') no-repeat;
 }
 
 .cat-dry-mixes {
-    background: url('/images/cat-dry-mixes.jpg') no-repeat;
+    background: url('../images/cat-dry-mixes.jpg') no-repeat;
 }
 
 .cat-technical-fluids {
-    background: url('/images/cat-technical-fluids.jpg') no-repeat;
+    background: url('../images/cat-technical-fluids.jpg') no-repeat;
 }
 
 .cat-white-cement {
-    background: url('/images/cat-white-cement.jpg') no-repeat;
+    background: url('../images/cat-white-cement.jpg') no-repeat;
 }
 
 
@@ -1122,7 +1136,7 @@ h2 {
     margin-bottom: 10px;
     width: 345px;
     height: 194px;
-    background: url('/images/rutube-bg.jpg') no-repeat;
+    background: url('../images/rutube-bg.jpg') no-repeat;
 }
 
 .video-text {
@@ -1132,6 +1146,26 @@ h2 {
 }
 
 /* End Rutube Video */
+
+/* Start Bred crambs */
+
+.bread-crumbs {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 40px;
+    gap: 10px;
+}
+
+.bread-crumbs-item {
+    font-family: 'Raleway-Medium';
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--smallTextColor);
+}
+
+/* End Bread crumbs */
+
+/* End body */
 
 /* Start Footer */
 
@@ -1230,8 +1264,6 @@ h2 {
     line-height: 16px;
     color: var(--accentColor);
 }
-
-.footer-nav {}
 
 .footer-nav-link {
     list-style: none;
@@ -1339,3 +1371,245 @@ h2 {
 .hidden {
     display: none;
 }
+
+
+/* Strat others pages */
+
+/* Strat category page */
+
+.category-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0 60px;
+    gap: 30px;
+
+}
+
+.subcategories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 12px;
+}
+
+.subcategories-item {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    gap: 20px;
+
+    width: 358px;
+    height: 96px;
+
+    background: var(--blue);
+    border-radius: 20px;
+}
+
+.subcategories-item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+}
+
+.subcategories-header {
+    font-family: 'Raleway-SemiBold';
+    font-size: 16px;
+    line-height: 21ox;
+}
+
+.subcategories-quantity {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--smallTextColor);
+}
+
+
+.category-page-products {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+}
+
+/* Start category-products-filters */
+.category-products-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 54px 0px 0px;
+    gap: 10px;
+    width: 270px;
+}
+
+/* End category-products-filters */
+/* Start products */
+
+.category-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 1170px;
+
+}
+
+.category-products-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 1170px;
+
+}
+
+.category-products-cart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+
+    width: 270px;
+    height: 545px;
+
+    border: 1px solid var(--lineColor);
+    border-radius: 20px;
+}
+
+.category-products-image {
+    width: 238px;
+    height: 228px;
+}
+
+.category-products-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    margin: 0 auto;
+}
+
+.category-products-text {
+    font-family: 'Raleway-Medium';
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.category-product-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 34px;
+}
+
+.category-product-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.category-product-price-old {
+    font-family: 'Raleway-Medium';
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration-line: line-through;
+    color: var(--smallTextColor);
+}
+
+.category-product-price-now {
+    font-family: 'Raleway-Bold';
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.category-product-price-discont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+    gap: 10px;
+    width: 37px;
+    height: 21px;
+
+    background: var(--textColor);
+    border-radius: 4px;
+
+    font-family: 'Raleway-Bold';
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--white);
+}
+
+.category-product-packing-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+}
+
+.category-product-packing-header {
+    font-family: 'Raleway-Medium';
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--smallTextColor);
+}
+
+.category-product-packing-options-items {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+
+.category-product-packing-options-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 10px;
+
+    border: 1px solid var(--lineColor);
+    border-radius: 6px;
+
+    font-family: 'Raleway-SemiBold';
+    font-size: 12px;
+    line-height: 17px;
+
+    cursor: pointer;
+}
+
+.category-product-footer {
+     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/* End products */
+
+/* End category page */

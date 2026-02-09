@@ -1499,10 +1499,11 @@ h2 {
 /* Start Sort by */
 
 .products-sort-by {
+    position: relative;
     margin-left: auto;
 }
 .products-sort-header {
-    position: relative;
+   
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1520,17 +1521,9 @@ h2 {
     line-height: 18px;
 }
 
-.arrow-product-sort {
-    transition: transform 0.3s ease;
-}
-
-.arrow-product-sort.active {
-    transition: rotate(180deg);
-}
-
 .sort-options {
     position: absolute;
-    top: 100%;
+    width: 0;
     left: 0;
     right: 0;
     background: var(--white);
@@ -1542,11 +1535,6 @@ h2 {
     transition: max-height 0.3s ease-out;
     z-index: 1000;
 }
-.sort-options.active {
-    max-height: 300px;
-    overflow-y: auto;
-}
-
 
 
 /* End Sort by */

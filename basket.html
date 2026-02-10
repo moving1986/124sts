@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/default-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-style.css">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start Header -->
+        <header class="header">
+
+            <div class="header-first_line">
+                <div class="container h-first-line">
+
+                    <div class="header-city">
+                        <div class="city-ico">
+                            <img src="images/svg/city-pointer.svg" alt="Текущий город">
+                        </div>
+                        <div class="select-wrapper">
+                            <select id="city-select" name="city" class="city-select">
+                                <option value="krasnoyarsk" selected>Красноярск</option>
+                                <option value="simferopol">Симферополь</option>
+                                <option value="irkutsk">Иркутск</option>
+                                <option value="abakan">Абакан</option>
+                            </select>
+                            <div class="custom-arrow">
+                                <img src="images/svg/ico-select-city.svg" alt="Выбор города">
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav>
+                        <ul class="main-nav">
+                            <li class="nav-item"><a href="" title="">Технологии</a></li>
+                            <li class="nav-item">
+                                <a class="stock" href="" title="">
+                                    <img src="images/svg/ico-stock.svg" alt="Акции">Акции
+                                </a>
+                            </li>
+                            <li class="nav-item"><a href="" title="">Доставка и оплата</a></li>
+                            <li class="nav-item"><a href="" title="">Контакты</a></li>
+                            <li class="nav-item">
+                                <a class="company-info" href="" title="">
+                                    Компания
+                                    <img src="images/svg/ico-more-info-company.svg" alt="Информация о компании">
+                                </a>
+                            </li>
+                            <li class="nav-item"><a href="" title="">Маркетплейсы</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="messagers">
+                        <a href="" title=""><img src="images/ico-telegram.png" alt="Телеграм канал"></a>
+                        <a href="" title=""><img src="images/ico-max.png" alt="Канал Макс"></a>
+                    </div>
+
+                    <div class="cont-email">
+                        <img src="images/svg/ico-email.svg" alt=""> 1@sts124.ru
+                    </div>
+
+                    <div class="cont-phone">
+                        <div class="phone">+7 (391) 204-63-44 <img src="images/svg/ico-phone-arrow.svg" alt="Телефоны">
+                        </div>
+                        <div class="call-back"><a href="" title="Заказать звонок">Заказать звонок</a></div>
+
+                        <!-- Strat modal contact -->
+                        <div class="contact-modal hidden">
+                            <div class="contacts">
+                                <div class="contact-header">
+                                    Отдел по работе с физ.лицами:
+                                </div>
+                                <div class="contact-phone-number">
+                                    +7 (391) 204-63-44
+                                </div>
+                                <div class="contact-phone-number">
+                                    +7 (913) 032-33-44
+                                </div>
+                            </div>
+
+                            <div class="contacts">
+                                <div class="contact-header">
+                                    Отдел по работе с юр. лицами:
+                                </div>
+                                <div class="contact-phone-number">
+                                    +7 (391) 209-66-55
+                                </div>
+                                <div class="contact-phone-number">
+                                    +7 (983) 269-66-55
+                                </div>
+                            </div>
+
+                            <div class="button-grey">Заказать звонок</div>
+
+                            <div class="line-contact"></div>
+
+                            <div class="contacts">
+                                <div class="contact-header">
+                                    Почта:
+                                </div>
+                                <div class="contact-adresses">
+                                    <img src="images/svg/ico-mail.svg" alt="email">
+                                    1@sts124.ru
+                                </div>
+                                <div class="contact-header">
+                                    Адрес:
+                                </div>
+                                <div class="contact-adresses">
+                                    <img src="images/svg/ico-adress.svg" alt="Адрес">
+                                    г. Красноярск, ул. Калинина, 79/1
+                                </div>
+                                <div class="contact-header">
+                                    Режим работы:
+                                </div>
+                                <div class="contact-adresses">
+                                    пн-пт 9:00-18:00, без перерыва
+                                    сб, вс выходной
+                                </div>
+                                <div class="contact-soc">
+                                    <a href="" title=""><img src="images/ico-telegram.png" alt="Телеграм канал"></a>
+                                    <a href="" title=""><img src="images/ico-max.png" alt="Канал Макс"></a>
+                                    <a href="" title=""><img src="images/ico-vk.png" alt="Страница Вконтакте"></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- End modal contact -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="header-second_line">
+                <div class="container h-second-line">
+                    <div class="logo">
+                        <a class="logo-link" href="index.html" title="Главная страница">
+                            <div class="logo-img"><img src="images/main-logo.png" alt="Логотип"></div>
+                            <div class="logo-text">Строительные<br>Технологии Сибири</div>
+                        </a>
+                    </div>
+
+                    <div class="cat-products ">
+                        <img src="images/svg/ico-cat.svg" alt="Каталог товаров">
+                        Каталог таваров
+
+                        <!-- Start modal catalog -->
+
+                        <div class="modal-catalog hidden">
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-e-smola.jpg" alt="Эпоксидная смола">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Эпоксидная смола</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-pol-smola.jpg" alt="Полиэфирная смола">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Полиэфирная смола</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-arm-materials.jpg" alt="Армирующие материалы">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Армирующие материалы</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-silicon.jpg" alt="Силиконы">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Силиконы</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-silicon-oil.jpg" alt="Силиконовое масло">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Силиконовое масло</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-pu-plastik.jpg" alt="Полиуретаны и пластики">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Полиуретаны и пластики</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-glue.jpg" alt="Клей">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Клей</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-germetik.jpg" alt="Герметик">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Герметик</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-gidorisol.jpg" alt="Гидроизоляция">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Гидроизоляция</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-lkm.jpg" alt="Лакокрасочные материалы">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Лакокрасочные материалы</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-rast.jpg" alt="Растворители">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Растворители</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-gips.jpg" alt="Гипс">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Гипс</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-form.jpg" alt="Формы">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Формы</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-krasiteli.jpg" alt="Красители">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Красители</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-add-beton.jpg" alt="Добавки в бетон">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Добавки в бетон</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-topping.jpg" alt="Топпинг">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Топпинг</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-artificial-grass.jpg" alt="Искусственная трава">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Искусственная трава</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-lubrication.jpg" alt="Смазки">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Смазки</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-equipment.jpg" alt="Оборудование">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Оборудование</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-shet.jpg" alt="Щитки и боксы в опоры освещения">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Щитки и боксы в опоры освещения</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-mramor.jpg" alt="Мраморная крошка">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Мраморная крошка</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-mramor.jpg" alt="Мраморная крошка">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Мраморная крошка</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-quarc-sand.jpg" alt="Кварцевый песок">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Кварцевый песок</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-catalog-item">
+                                <div class="img-cat">
+                                    <img src="images/modal-catalog/cat-dry-mixes.jpg" alt="Сухие смеси">
+                                </div>
+                                <div class="modal-catalog-text">
+                                    <a href="catalog.html">
+                                        <div class="maodal-catalog-header">Сухие смеси</div>
+                                        <div class="modal-catalog-quantity">(58 товаров)</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- End modal catalog -->
+
+
+                    </div>
+
+                    <div class="search">
+                        <input class="search-feild" type="text" placeholder="Найти">
+                    </div>
+
+                    <div class="auterization">
+                        <div class="ico-enter">
+                            <a href="/" title="">
+                                <img src="images/svg/ico-enter.svg" alt="Вход">
+                            </a>
+                        </div>
+                        <div class="enter-text">
+                            <a href="/" title="">Войти</a>
+                        </div>
+                    </div>
+
+                    <div class="favorite">
+                        <div class="ico-favorite">
+                            <a href="/" title="">
+                                <img src="images/svg/ico-favorite.svg" alt="Избранное">
+                            </a>
+                        </div>
+                        <div class="favoroite-text">
+                            <a href="/" title="">Избранное</a>
+                        </div>
+                    </div>
+
+                    <div class="basket">
+                        <div class="ico-basket">
+                            <a href="/" title="">
+                                <img src="images/svg/ico-basket.svg" alt="Козина">
+                            </a>
+                        </div>
+                        <div class="basket-text">
+                            <a href="/" title="">Корзина</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <main>
+            <div class="container">
+
+                <section class="bread-crumbs">
+
+                    <div class="bread-crumbs-item">
+                        <img src="images/svg/ico-back-breadcrumbs.svg" alt="">
+                    </div>
+                    <div class="bread-crumbs-item">
+                        <a href="" title="">
+                            Вернуться к покупкам
+                        </a>
+                    </div>
+
+
+                </section>
+
+                <section class="basket-page">
+                    <h2>Корзина</h2>
+                    <!-- Start Basket -->
+
+                    <div class="basket-page-body">
+                        <div class="baket-products">
+
+                            <div class="baket-products-item">
+                                <div class="basket-item-img">
+                                    <img src="images/basket/item-baket-img.jpg" alt="">
+                                </div>
+                                <div class="basket-item-title">
+                                    <div class="basket-product-labaels">
+                                        <div class="product-labels__item">
+                                            Акция
+                                        </div>
+                                        <div class="product-labels__item">
+                                            Хит продаж
+                                        </div>
+                                        <div class="product-labels__item">
+                                            Новинка
+                                        </div>
+                                    </div>
+
+                                    <div class="basket-item-text">
+                                        Краска дорожная АК-511 Б, ТУ, цвет серый, 25 кг
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="basket-order">
+                            <div class="basket-order-form">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-cont">
+                <div class="map">
+                    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adfd438efe76e6d0aa0e97854ed4700492f97442a6abeb37ebd352001d5d526d0&amp;width=100%25&amp;height=495&amp;lang=ru_RU&amp;scroll=true"></script> -->
+                    <img class="map" src="images/map.jpg" alt="">
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-links-logo">
+                        <div class="logo-footer">
+                            <div class="logo-img"><img src="images/main-logo.png" alt="Логотип"></div>
+                            <div class="logo-text-footer">Строительные<br>Технологии Сибири</div>
+                        </div>
+                        <div class="map-tags">
+                            <a href="">
+                                <div class="map-tag">
+                                    <div class="tag-img"><img src="/images/svg/ico-tag.svg" alt="Тег Красноярск"></div>
+                                    <div class="tag-text">Красноярск</div>
+                                </div>
+                            </a>
+                            <a href="" title="">
+                                <div class="map-tag">
+                                    <div class="tag-img"><img src="/images/svg/ico-tag.svg" alt="Тег Симферополь"></div>
+                                    <div class="tag-text">Симферополь</div>
+                                </div>
+                            </a>
+                            <a href="" title="">
+                                <div class="map-tag">
+                                    <div class="tag-img"><img src="/images/svg/ico-tag.svg" alt="Тег Иркутск"></div>
+                                    <div class="tag-text">Иркутск</div>
+                                </div>
+                            </a>
+                            <a href="" title="">
+                                <div class="map-tag">
+                                    <div class="tag-img"><img src="/images/svg/ico-tag.svg" alt="Тег Абакан"></div>
+                                    <div class="tag-text">Абакан</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <ul class="footer-nav-link">
+                            <li class="nav-link"><a href="" title="О компании">О компании</a></li>
+                            <li class="nav-link"><a href="" title="Технологии">Технологии</a></li>
+                            <li class="nav-link"><a href="" title="Маркетплейсы">Маркетплейсы</a></li>
+                            <li class="nav-link"><a href="" title="Контакты">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-item">
+                        <div class="item-link"><a href="" title="Каталог">Каталог</a></div>
+                        <div class="item-link">
+                            <a class="stock-footer" href="" title="">
+                                <img src="images/svg/ico-stock.svg" alt="Акции">Акции
+                            </a>
+                        </div>
+                        <div class="item-link"><a href="" title="Доставка и оплата">Доставка и оплата</a></div>
+                        <div class="callback">
+                            Заказать звонок
+                        </div>
+                    </div>
+                    <div class="footer-differents-links">
+                        <div class="footer-differents-links-item">
+                            <div class="link-dif-ico"><img src="images/svg/ico-cons-footer.svg"
+                                    alt="Нужна консультация?">
+                            </div>
+                            <div class="dif-link-text"><a href="" title="Нужна консультация?">Нужна консультация?</a>
+                            </div>
+                        </div>
+                        <div class="footer-differents-links-item">
+                            <div class="link-dif-ico"><img src="images/svg/ico-letter-nach.svg"
+                                    alt="Написать письмо руководству"></div>
+                            <div class="dif-link-text"><a href="" title="Написать письмо руководству">Написать письмо
+                                    руководству</a></div>
+                        </div>
+                        <div class="footer-differents-links-item">
+                            <div class="link-dif-ico"><img src="images/svg/ico-pers-cons.svg"
+                                    alt="Получить индивидуальное предложение"></div>
+                            <div class="dif-link-text"><a href="" title="Получить индивидуальное предложение">Получить
+                                    индивидуальное предложение</a></div>
+                        </div>
+                        <div class="footer-differents-links-item">
+                            <div class="link-dif-ico"><img src="images/svg/ico-your-product.svg"
+                                    alt="Предложить нам свои товары и услуги"></div>
+                            <div class="dif-link-text"><a href="" title="Предложить нам свои товары и услуги">Предложить
+                                    нам свои товары и услуги</a></div>
+                        </div>
+                        <div class="footer-differents-links-item">
+                            <div class="link-dif-ico"><img src="images/svg/ico-china-product.svg"
+                                    alt="Заказать товары из Китая"></div>
+                            <div class="dif-link-text"><a href="" title="Заказать товары из Китая">Заказать товары из
+                                    Китая</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    Информация на сайте не является публичной офертой.
+                    Перед оформлением заказа на любой товар через сайт или посещением розничного магазина настоятельно
+                    рекомендуем связаться с менеджером по телефону для уточнения наличия, актуальной стоимости и сроков
+                    поставки.
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script async src="js/script.js"></script>
+</body>
+
+</html>

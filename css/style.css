@@ -2215,6 +2215,7 @@ h2 {
     align-items: flex-start;
     padding: 24px;
     gap: 20px;
+    width: 1095px;
 
     border: 1px solid var(--lineColor);
     border-radius: 20px;
@@ -2259,8 +2260,117 @@ h2 {
     line-height: 22px;
 }
 
-/* End basket page */
+.basket-item-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
 
+    margin: 0 auto;
+}
+
+.basket-current-price {
+    font-family: 'Raleway-Bold';
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.basket-old-price {
+    font-family: 'Raleway-Medium';
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration-line: line-through;
+    color: var(--smallTextColo);
+}
+
+.basket-discont-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+    gap: 10px;
+
+    width: 37px;
+    height: 21px;
+
+    background: var(--textColor);
+    border-radius: 4px;
+
+    font-family: 'Raleway-Bold';
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--white);
+}
+
+.basket-item-quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+
+    margin: 0 auto;
+}
+
+.basket-quantity-count {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    gap: 22px;
+
+    width: 104px;
+    height: 36px;
+
+    background: var(--blue);
+    border-radius: 6px;
+}
+
+.basket-quantity-turn-down,
+.basket-quantity-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+}
+
+.basket-quantity-item {
+    margin: 0 auto;
+
+    font-family: 'Raleway-Bold';
+    font-size: 16px;
+    line-height: 22px;
+    leading-trim: both;
+    text-edge: cap;
+    text-align: center;
+}
+
+.basket-price-for-item {
+    font-family: 'Raleway-Medium';
+    font-size: 12px;
+    line-height: 17px;
+
+    text-align: center;
+    color: var(--smallTextColor);
+}
+
+.basket-remove-add-favorite {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+
+/* End basket page */
+.add-to-favorite {
+    cursor: pointer;
+}
 
 .hidden {
     display: none;

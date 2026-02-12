@@ -2366,6 +2366,59 @@ h2 {
     gap: 16px;
 }
 
+.basket-offer-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px 0px 14px;
+    gap: 20px;
+    width: 285px;
+    height: 43px;
+
+    border-bottom: 1px solid #D6E6F9;
+}
+
+.offer-header-text {
+    font-family: 'Raleway-Bold';
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.offer-quantity-roduct {
+    font-family: 'Raleway-Medium';
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--smallTextColor);
+}
+
+
+.total-order {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 285px;
+}
+
+.totla-price, .total-disocnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    width: 285px;
+    height: 24px;
+
+    font-family: 'Raleway-Bold';
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
 
 /* End basket page */
 .add-to-favorite {

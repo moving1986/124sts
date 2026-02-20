@@ -3022,7 +3022,8 @@ h2 {
 
 .adress-text-name,
 .contact-phone-type,
-.worck-schedule-header {
+.worck-schedule-header,
+.contact-email-header {
     color: var(--smallTextColor);
 
 }
@@ -3080,6 +3081,48 @@ h2 {
     line-height: 150%;
 }
 
+.contact-email {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.contact-email-innner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-email-text {
+    font-family: 'Raleway-Medium';
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.contact-socset {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-btn {
+    width: 170px;
+    height: 48px;
+
+    font-family: 'Raleway-Bold';
+    font-size: 14px;
+    line-height: 16px;
+
+}
 
 .main-office-map {
     width: 752px;
@@ -3087,6 +3130,124 @@ h2 {
 
     background: url('../images/office-map.jpg');
     border-radius: 16px;
+}
+
+.contact-branches {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 0px 0px;
+    gap: 30px;
+
+    width: 1470px;
+}
+
+.contact-branches-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.contact-branches-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 20px;
+    width: 470px;
+
+    border: 1px solid var(--pageColor);
+    border-radius: 20px;
+}
+
+.branch-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    width: 410px;
+}
+
+.contact-item-header {
+    font-family: 'Raleway-SemiBold';
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.branch-item-adress,
+.branch-item-phones,
+.branch-item-email {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 14px;
+}
+
+.branch-adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.branch-adress-header,
+.branch-phone-header,
+.branch-email-header {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--smallTextColor);
+}
+
+.adress-branch {
+    font-family: 'Raleway-Medium';
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.branch-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.branch-phone-number {
+    font-family: 'Raleway-Bold';
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.branch-schedule {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--smallTextColor);
+
+    & span {
+        font-family: 'Raleway-SemiBold';
+    }
+}
+
+.branch-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.branch-email-adress {
+    font-family: 'Raleway-Medium';
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.branch-social-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* End contact page */

@@ -3324,15 +3324,25 @@ h2 {
 }
 
 .design-service-text {
-    font-family: 'Raleway-Medium';
+   font-family: 'Raleway-Medium';
     font-size: 16px;
     line-height: 160%;
 }
 
 .sample-design-service {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
+}
+
+.design-service-row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.sample-design-service img {
+    border-radius: 20px;
+
 }
 
 

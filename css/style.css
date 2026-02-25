@@ -3565,6 +3565,139 @@ h2 {
 
 /* End design service page */
 
+/* Start  page design master classes*/
+
+.design-master-classes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 60px;
+    gap: 30px;
+}
+
+.master-class-bun {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    gap: 24px;
+
+    width: 1470px;
+    height: 172px;
+
+    background: url("../images/master-classes/bg-master-class-bun.png");
+}
+
+.master-bun-header {
+    font-family: 'Raleway-SemiBold';
+    font-size: 28px;
+    line-height: 33px;
+    color: var(--white);
+}
+
+.autor-master-class {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 421px;
+    height: 112px;
+}
+
+
+.autor-master-text {
+    font-family: 'Raleway-Medium';
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+}
+
+.autor-master-contact {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+}
+
+.master-contact-item {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.master-phone-bun {
+    font-family: 'Raleway-SemiBold';
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--white);
+}
+
+.master-mail-bun {
+    font-family: 'Raleway-SemiBold';
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--white);
+}
+
+.list-of-master-classes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 30px;
+}
+
+.master-class-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 470px;
+    height: 680px;
+
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.description-master-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 20px 10px;
+    gap: 10px;
+}
+
+
+.header-master-item {
+    font-family: 'Raleway-SemiBold';
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+.text-master-item {
+    font-family: 'Raleway-Medium';
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--smallTextColor);
+}
+
+.more-master-item {
+    font-family: 'Raleway-Medium';
+    font-size: 14px;
+    line-height: 120%;
+
+    border-bottom: 1px dashed var(--textColor);
+}
+
+
+
+
+/* End  page design master classes*/
+
 
 .add-to-favorite {
     cursor: pointer;

@@ -736,7 +736,7 @@ h2 {
 }
 
 .cat-silikon-oil {
-    background: url('../images/cat-silikon-oil.jpg') no-repeat;
+    background: url('../images/cat-silion-oil.jpg') no-repeat;
 }
 
 .cat-plastic {
@@ -3456,7 +3456,6 @@ h2 {
     padding: 40px 0px 0px 40px;
     gap: 16px;
 
-    width: 863px;
     height: 188px;
 
     font-family: 'Raleway-SemiBold';
@@ -3481,7 +3480,6 @@ h2 {
 }
 
 .callback-form-header {
-    width: 709px;
     height: 32px;
 
     font-size: 20px;

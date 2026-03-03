@@ -19,8 +19,9 @@ h2 {
 }
 
 .wrapper {
-    width: 1900px;
+    max-width: 1900px;
     margin: 0 auto;
+ 
 
     background-color: var(--white);
 }
@@ -430,12 +431,20 @@ h2 {
 
 .functions-links {
     display: flex;
+    align-items: center;
     gap: 30px;
 }
+
+.ico-search-header,
+.ico-call-header {
+    display: none;
+}
+
 .ico-basket {
     width: 24px;
     height: 24px;
 }
+
 .auterization,
 .favorite,
 .basket {

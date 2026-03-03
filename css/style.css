@@ -42,8 +42,6 @@ h2 {
 
 .header-second_line {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     height: 104px;
     border-top: 1px solid var(--lineColor);
 
@@ -294,7 +292,6 @@ h2 {
 }
 
 .call-back {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,9 +306,17 @@ h2 {
     gap: 30px;
 }
 
+.ico-cat-menu {
+    display: none;
+}
+
 .logo {
-    box-sizing: border-box;
     width: 274px;
+    height: 64px;
+}
+
+.logo-img {
+    width: 58px;
     height: 64px;
 }
 
@@ -423,6 +428,14 @@ h2 {
 
 }
 
+.functions-links {
+    display: flex;
+    gap: 30px;
+}
+.ico-basket {
+    width: 24px;
+    height: 24px;
+}
 .auterization,
 .favorite,
 .basket {

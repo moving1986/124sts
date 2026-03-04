@@ -90,13 +90,18 @@
         align-items: center;
     }
 
+    .main-slider {
+        width: 100%;
+    }
+
     .other-service {
         display: flex;
         flex-direction: row;
         width: 100%;
         height: auto;
         align-items: center;
-    
+        justify-content: center;
+
     }
 
     .bun1,
@@ -106,12 +111,62 @@
         align-items: flex-start;
         padding: 40px;
         gap: 20px;
-
-         width: calc(50% - 10px);
+        width: 100%;
         height: 265px;
         border-radius: 20px;
     }
 
+    .advantages {
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .advanteges-item {
+        width: calc(50% - 16px);
+        height: auto;
+    }
+
+    .catalog-line{
+        justify-content: center;
+    }
+
+    .catalog-item {
+        width: calc(33% - 30px);
+    }
+
+    .best-offers-cards {
+        justify-content: center;
+    }
+
+    .best-offers-card {
+        width: calc(50% - 30px);
+    }
+
+    .stocks-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stoks-item {
+        width: calc(50% - 30px);
+    }
+
+    .stock-img {
+        width: 100%;
+    }
+
+    .rutube-videos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .video-item  {
+        width: calc(50% - 30px);
+        
+    }
 }
 
 @media (max-width: 768px) {}

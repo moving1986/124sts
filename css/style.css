@@ -21,12 +21,13 @@ h2 {
 .wrapper {
     max-width: 1900px;
     margin: 0 auto;
- 
+    position: relative;
 
     background-color: var(--white);
 }
 
 .container {
+    position: relative;
     max-width: 1470px;
     margin: 0 auto;
 }
@@ -214,7 +215,6 @@ h2 {
 }
 
 .cont-phone {
-    position: relative;
     display: flex;
     align-items: center;
     padding: 0px;
@@ -236,6 +236,7 @@ h2 {
     width: 295px;
     left: 10px;
     top: 30px;
+    z-index: 1000; 
 
     background: var(--white);
     border-radius: 20px;
@@ -337,7 +338,6 @@ h2 {
 
 
 .cat-products {
-    position: relative;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -373,8 +373,9 @@ h2 {
     position: absolute;
     width: 1550px;
     height: 560px;
-    left: -290px;
-    top: 60px;
+    left: 500px;
+    top: 150px;
+    z-index: 1000; 
 
     background: var(--white);
     box-shadow: 0px 10px 40px rgba(75, 75, 75, 0.1);
@@ -3724,5 +3725,5 @@ h2 {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }

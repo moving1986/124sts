@@ -5,9 +5,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const modal = document.querySelector('.contact-modal');
     const catalog = document.querySelector('.cat-products');
     const catalogModal = document.querySelector('.modal-catalog');
-    const adaptCatalog = document.querySelector('.ico-cat-menu');
-    const adaptCatalogModal = document.querySelector('.modal-overlay-adaptive');
+
+    const adaptMainMenu = document.querySelector('.ico-main-menu');
+    const adaptiveMainMenuModal = document.querySelector('.modal-main-menu-overlay-adaptive');
+    const closeMainMenuModal = document.querySelector('.modal-main-menu-close-adaptive');
+
+    const adaptCatalogModal = document.querySelector('.modal-catalog-overlay-adaptive');
     const closeAdaptCatalog = document.querySelector('.modal-close-adaptive');
+   
+   
+
 
     if (!phone || !modal || !catalog || !catalogModal || !adaptCatalogModal) {
         console.warn('Не все элементы найдены');
@@ -38,19 +45,33 @@ document.addEventListener('DOMContentLoaded', function () {
         catalogModal.classList.toggle('hidden'); // открываем/закрываем каталог
     });
 
-    // Обработчик для каталога адаптив
-    adaptCatalog.addEventListener('click', function (e) {
+
+    // // Обработчик для каталога адаптив
+    // adaptCatalog.addEventListener('click', function (e) {
+    //     e.stopPropagation();
+    //     e.preventDefault();
+
+    //     adaptCatalogModal.classList.toggle('hidden');
+    // });
+
+    // Обработчик для главного меню адаптив
+    adaptMainMenu.addEventListener('click', function (e) {
         e.stopPropagation();
         e.preventDefault();
 
-        adaptCatalogModal.classList.toggle('hidden'); // открываем/закрываем каталог адаптива
+        adaptiveMainMenuModal.classList.toggle('hidden');
     });
-
 
     // Закрытие модального окна каталога при клике на крестик 
     closeAdaptCatalog.addEventListener('click', () => {
         adaptCatalogModal.classList.add('hidden');
-    }); 
+    });
+
+
+    // Закрытие модального окна главного меню при клике на крестик 
+    closeMainMenuModal.addEventListener('click', () => {
+        adaptiveMainMenuModal.classList.add('hidden');
+    });
 
 
     // Закрытие при клике вне модальных окон

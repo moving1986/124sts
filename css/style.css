@@ -1640,6 +1640,53 @@ h2 {
 /* End Footer */
 
 
+/* Start down adaptive panel */
+
+.down-main-panel-adaptive {
+
+    display: none;
+    justify-content: center;
+    padding: 12px 15px;
+    gap: 30px;
+
+    width: 100%;
+    height: 59px;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+
+
+
+    background: var(--white);
+    box-shadow: 0px -2px 11.3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.down-panel-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+
+    width: 54px;
+    height: 35px;
+
+}
+
+.down-panel-item-text {
+    font-family: 'Raleway-Medium';
+    font-size: 9px;
+    line-height: 11px;
+    color: var(--smallTextColor);
+
+}
+
+
+/* End down adaptive panel */
+
 /* Strat others pages */
 
 /* Strat category page */

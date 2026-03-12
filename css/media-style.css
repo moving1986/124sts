@@ -79,6 +79,10 @@
         display: none;
     }
 
+    .down-main-panel-adaptive {
+        display: flex;
+    }
+
 }
 
 @media (max-width: 1100px) and (min-width: 768px) {

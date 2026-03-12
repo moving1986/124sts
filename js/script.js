@@ -6,17 +6,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const catalog = document.querySelector('.cat-products');
     const catalogModal = document.querySelector('.modal-catalog');
 
+    const contactModal = document.querySelector('.ico-call-header');
+    const contactModalAdaptive = document.querySelector('.modal-contact-overlay-adaptive');
+    const closeContactModal = document.querySelector('.modal-contact-close-adaptive');
+
     const adaptMainMenu = document.querySelector('.ico-main-menu');
     const adaptiveMainMenuModal = document.querySelector('.modal-main-menu-overlay-adaptive');
     const closeMainMenuModal = document.querySelector('.modal-main-menu-close-adaptive');
 
+    const buttonAdaptCatlogModal = document.querySelector('.button-cut-product-adaptive');
     const adaptCatalogModal = document.querySelector('.modal-catalog-overlay-adaptive');
     const closeAdaptCatalog = document.querySelector('.modal-close-adaptive');
-   
-   
 
 
-    if (!phone || !modal || !catalog || !catalogModal || !adaptCatalogModal) {
+
+
+    if (!phone || !modal || !catalog || !catalogModal || !adaptCatalogModal || !closeContactModal) {
         console.warn('Не все элементы найдены');
         return;
     }
@@ -46,13 +51,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    // // Обработчик для каталога адаптив
-    // adaptCatalog.addEventListener('click', function (e) {
-    //     e.stopPropagation();
-    //     e.preventDefault();
+    // Обработчик для каталога адаптив
+    buttonAdaptCatlogModal.addEventListener('click', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
 
-    //     adaptCatalogModal.classList.toggle('hidden');
-    // });
+        adaptiveMainMenuModal.classList.add('hidden');
+        adaptCatalogModal.classList.toggle('hidden');
+    });
 
     // Обработчик для главного меню адаптив
     adaptMainMenu.addEventListener('click', function (e) {
@@ -61,6 +67,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
         adaptiveMainMenuModal.classList.toggle('hidden');
     });
+
+    // Обработчик для контактов адаптив
+    contactModal.addEventListener('click', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+
+        contactModalAdaptive.classList.toggle('hidden');
+    });
+
+
+    // Закрытие модального окна контактов при клике на крестик 
+    closeContactModal.addEventListener('click', () => {
+        contactModalAdaptive.classList.add('hidden');
+    });
+
 
     // Закрытие модального окна каталога при клике на крестик 
     closeAdaptCatalog.addEventListener('click', () => {

@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const adaptCatalogModal = document.querySelector('.modal-catalog-overlay-adaptive');
     const closeAdaptCatalog = document.querySelector('.modal-close-adaptive');
 
+    const companyButton = document.querySelector('.company-menu-nav');
+    const companyMenu = document.querySelector('.company-menu');
 
 
 
@@ -33,6 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Обработчик для телефона
+    companyButton.addEventListener('click', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+
+        companyMenu.classList.toggle('hidden');
+    });
+
+    // Обработчик для меню компания
     phone.addEventListener('click', function (e) {
         e.stopPropagation();
         e.preventDefault();
@@ -102,6 +112,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (!catalogModal.contains(e.target) && !catalog.contains(e.target)) {
             catalogModal.classList.add('hidden');
+        }
+        if (!companyMenu.contains(e.target) && !companyButton.contains(e.target)) {
+            companyMenu.classList.add('hidden');
         }
     });
 

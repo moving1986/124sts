@@ -83,6 +83,25 @@
         display: flex;
     }
 
+    .catalog-line {
+        justify-content: center;
+    }
+
+    .best-offers-cards {
+        justify-content: center;
+    }
+
+    .stocks-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rutube-videos {
+        flex-wrap: wrap;
+    }
+    .video-item {
+        width: calc(50% - 30px);
+    }
 }
 
 @media (max-width: 1100px) and (min-width: 768px) {
@@ -158,9 +177,7 @@
         justify-content: center;
     }
 
-    .best-offers-card {
-        width: calc(50% - 30px);
-    }
+  
 
     .stocks-items {
         flex-wrap: wrap;
@@ -182,7 +199,6 @@
 
     .video-item {
         width: calc(50% - 30px);
-
     }
 
     /* Footer */

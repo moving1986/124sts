@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const buttonAdaptCatlogModal = document.querySelector('.button-cut-product-adaptive');
     const adaptCatalogModal = document.querySelector('.modal-catalog-overlay-adaptive');
     const closeAdaptCatalog = document.querySelector('.modal-close-adaptive');
+    const buttonDonModalCatalog = document.querySelector('.down-catalog-btn');
 
     const companyButton = document.querySelector('.company-menu-nav');
     const companyMenu = document.querySelector('.company-menu');
@@ -62,13 +63,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Обработчик для каталога адаптив
-    buttonAdaptCatlogModal.addEventListener('click', function (e) {
+    function toggleCatalogModal(e) {
         e.stopPropagation();
         e.preventDefault();
-
+        
         adaptiveMainMenuModal.classList.add('hidden');
         adaptCatalogModal.classList.toggle('hidden');
-    });
+    }
+    
+    buttonDonModalCatalog.addEventListener('click', toggleCatalogModal);
+    buttonAdaptCatlogModal.addEventListener('click', toggleCatalogModal);
 
     // Обработчик для главного меню адаптив
     adaptMainMenu.addEventListener('click', function (e) {

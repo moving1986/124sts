@@ -1,4 +1,4 @@
-@media (max-width: 1520px) and (min-width: 768px) {
+@media (max-width: 1520px) {
     .wrapper {
         width: 100%;
     }
@@ -104,7 +104,7 @@
     }
 }
 
-@media (max-width: 1100px) and (min-width: 768px) {
+@media (max-width: 1100px)  {
     .header {
         height: 84px;
     }
